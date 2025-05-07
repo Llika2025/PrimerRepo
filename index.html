@@ -1,13 +1,123 @@
-<html>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-0YFXBS0EZT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Blog de Carlos</title>
 
-  gtag('config', 'G-0YFXBS0EZT');
-</script>
-  <h1>Esta es mi primera pagina con GitHub Pages</h1>
-  <p>Gracias GitHub!</p>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-0YFXBS0EZT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-0YFXBS0EZT');
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      text-align: center;
+      animation: fondo 10s infinite alternate;
+      background: linear-gradient(45deg, #00c6ff, #0072ff);
+      background-size: 400% 400%;
+    }
+
+    @keyframes fondo {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      padding: 50px 20px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 0;
+    }
+
+    header p {
+      font-size: 1.3em;
+      color: #e0f7fa;
+    }
+
+    nav {
+      margin: 30px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-bottom: 2px solid transparent;
+    }
+
+    nav a:hover {
+      border-color: #ffffff;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    footer {
+      padding: 20px;
+      font-size: 0.9em;
+      color: #cfd8dc;
+    }
+
+    .logo {
+      width: 120px;
+      margin: 20px auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Aquí puedes reemplazar el src con tu logo -->
+    <img src="logo.png" alt="Logo del blog" class="logo" />
+    <h1>El Blog de Carlos</h1>
+    <p>Una mirada hacia mis hobbies</p>
+  </header>
+
+  <nav>
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#que-me-gusta">Qué me gusta</a>
+    <a href="#fotos">Fotos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <section id="sobre-mi">
+    <h2>Sobre mí</h2>
+    <p>Soy un apasionado del triatlón, el skate y compartir mis experiencias deportivas.</p>
+  </section>
+
+  <section id="que-me-gusta">
+    <h2>Qué me gusta</h2>
+    <p>Disfruto correr en la mañana, andar en bici los fines de semana y nadar en mar abierto.</p>
+  </section>
+
+  <section id="fotos">
+    <h2>Fotos</h2>
+    <p>Próximamente compartiré mis mejores momentos en competencias y entrenamientos.</p>
+  </section>
+
+  <section id="contacto">
+    <h2>Contacto</h2>
+    <p>Puedes escribirme a: <strong>carlos@ejemplo.com</strong></p>
+  </section>
+
+  <footer>
+    © 2025 El Blog de Carlos — Todos los derechos reservados
+  </footer>
+
+  <h1>Esta es mi primera página con GitHub Pages</h1>
+  <p>¡Gracias GitHub!</p>
+</body>
 </html>
