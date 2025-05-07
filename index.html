@@ -77,34 +77,41 @@
       display: block;
     }
 
-    .card {
-      background-color: rgba(255, 255, 255, 0.1);
-      padding: 20px;
-      border-radius: 12px;
-      width: 300px;
-      text-align: center;
-      margin: 10px;
-    }
-
-    .card h3 {
-      margin-top: 0;
-    }
-
-    .card p {
-      font-size: 1.1em;
-    }
-
     .card-container {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 20px;
     }
+
+    .card {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 12px;
+      width: 320px;
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-top: 0;
+    }
+
+    .gallery {
+      margin-top: 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      gap: 10px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      border: 2px solid white;
+    }
   </style>
 </head>
 <body>
   <header>
-    <!-- Aquí puedes reemplazar el src con tu logo -->
     <img src="logo.png" alt="Logo del blog" class="logo" />
     <h1>El Blog de Carlos</h1>
     <p>Una mirada hacia mis hobbies</p>
@@ -129,10 +136,17 @@
         <h3>Maratones</h3>
         <p>Me encanta correr maratones, desde 10k hasta 42k. Aquí compartiré historias, fotos y tips de mis carreras.</p>
       </div>
+
       <div class="card">
         <h3>Triatlones</h3>
         <p>Combinar natación, ciclismo y carrera es un reto que disfruto. Mis experiencias en triatlones estarán aquí.</p>
+        <div class="gallery">
+          <img src="triatlon1.jpg" alt="Triatlón 1" />
+          <img src="triatlon2.jpg" alt="Triatlón 2" />
+          <img src="triatlon3.jpg" alt="Triatlón 3" />
+        </div>
       </div>
+
       <div class="card">
         <h3>Mis hijas</h3>
         <p>También comparto tiempo y aventuras con mis hijas, quienes me inspiran cada día. Aquí pondré momentos únicos.</p>
